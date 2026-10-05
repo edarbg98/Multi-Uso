@@ -29,7 +29,7 @@ async function validarContraseña() {
     const input = inputContraseña.value
 
     if (rage.test(input)) {
-        textoValidar.textContent = `La contraseña es vlida : ${input}`
+        textoValidar.textContent = `La contraseña es valida : ${input}`
     } else {
         textoValidar.textContent = "Ingrese una contraseña"
     }
