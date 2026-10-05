@@ -41,7 +41,7 @@ async function EncontrarPais() {
         const datos = await response.json()
         const hora = datos.timezone / 3600
 
-        textoPais.textContent = `El pais ${encontrar}, para llegar se demora ${hora}`
+        textoPais.textContent = `El pais ${encontrar}, para llegar se demora ${hora} hora`
         
     } catch  {
         textoPais.textContent = `Ingrese un Pais/Ciudad`
