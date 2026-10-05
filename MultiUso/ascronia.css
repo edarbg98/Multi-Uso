@@ -1,0 +1,159 @@
+* {
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background-color: 9#FFEFD5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #C0C0C0;
+}
+
+header {
+    position: relative;
+    display: grid;
+    justify-content: space-around;
+}
+
+.hijo-header {
+    position: relative;
+    padding: 14px;
+    display: grid;
+    grid-template-areas: 
+    "anima anima anima h1";
+    gap: 12px;
+}
+
+.animacion {
+    grid-area: anima;
+    background-color: #FFC0CB;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 6px;
+    animation: flotante 1s  ease-in-out infinite alternate ;
+}
+
+@keyframes flotante {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.h1 {
+    grid-area: h1;
+    color: #C0C0C0;
+}
+
+nav {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "api sicronia ragex";
+    gap: 24px;
+}
+
+.apis {
+    grid-area: api;
+}
+.sicronia {
+    grid-area: sicronia;
+}
+
+.ragex {
+    grid-area: ragex;
+}
+
+a {
+    text-decoration: none;
+    color: #FFC0CB;
+    font-size: 18px;
+}
+
+a:active {
+    color: #C0C0C0;
+}
+
+main {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "main";
+}
+
+.hijo-main {
+    grid-area: main;
+    position: relative;
+    top: 80px;
+    background-color: #FFE4E1;
+    padding: 12px;
+    text-align: center;
+    width: 500px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+input, button {
+    padding: 12px;
+    color: #C0C0C0;
+    border: none;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: 1px solid #FFC0CB;
+}
+
+button {
+    color: #FFC0CB;
+}
+
+button:active {
+    color: #C0C0C0;
+    outline: 1px solid #C0C0C0;
+}
+
+.github, .instagram {
+    color: #C0C0C0;
+    transition: color 1s ease-in-out;
+}
+
+.instagram:hover {
+    color: hotpink;
+}
+
+.github:hover {
+    color: black;
+}
+
+footer {
+    position: relative;
+    display: grid;
+    text-align: center;
+    justify-content: space-evenly;
+    top: 110px;
+    grid-template-areas: 
+    "github instagram";
+}
+
+.div-github {
+    grid-area: github;
+}
+
+.div-instagram {
+    grid-area: instagram;
+}

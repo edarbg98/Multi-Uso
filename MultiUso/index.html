@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edar Dev</title>
+    <link rel="stylesheet" href="uso.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="hijo-header">
+                <div class="animacion"></div>
+                <div class="h1">
+                    <h1>Edar Dev</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="apis">
+            <a href="index.html" target="_self" rel="noopener noreferrer">API's</a>
+        </div>
+        <div class="sicronia">
+            <a href="asicronia.html" target="_self" rel="noopener noreferrer">Sicronia</a>
+        </div>
+        <div class="ragex">
+            <a href="ragex.html" target="_self" rel="noopener noreferrer">Ragex</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hijo-main">
+            <h2>Vamos interactuar con el Api</h2>
+            <br>
+            <span>En la primera interaccion voy a usar el API de Pokemon (PokeAPI)</span>
+            <p> <br> 
+                <strong>Ingrese un Pokemon</strong>
+            </p>
+            <br>
+
+            <input type="text" placeholder="Ej: Pikachu" id="pokemon"> 
+            <button type="button" id="buscarPokemon">Buscar</button>
+            <p class="texto"></p> <br>
+
+            <hr>
+            <br>
+
+            <span>En la segunda interaccion voy usar el API OpenWether, en este caso usare el tiempo de demora en hacia un pais</span>
+            <p> <br>
+                <strong>Ingrese un Pais/Ciudad</strong>
+            </p> <br>
+
+            <input type="text" placeholder="Ej: London" id="paises">
+            <button type="button" id="buscarPais">Buscar</button>
+            <p class="textoPais"></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="div-instagram">
+            <a href="https://www.instagram.com/edar674/" target="_blank" rel="noopener noreferrer" class="instagram">Instagram</a>
+
+        </div>
+        <div class="div-github">
+            <a href="https://github.com/edarbg98v" target="_blank" rel="noopener noreferrer" class="github">GitHub</a>
+
+        </div>
+    </footer>
+
+    <script type="module" src="uso.js"></script>
+
+</body>
+</html>
